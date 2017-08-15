@@ -1,0 +1,296 @@
+
+/* BOTÕES */
+/* BUTTON */
+.button {
+	border: 0;
+	color: white;
+	background-color: #13a9ba;
+	padding: 10px 30px;
+	border-radius: 3px;
+	font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+
+/* CORPO */
+/* BODY */
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: #333;
+}
+
+
+/* H1 H2 H3 */
+h1, h2, h3 {
+	margin: 0;
+	font-family: "Roboto Slab", "Helvetica Neue", Arial, sans-serif;
+	font-weight: 700px;
+}
+
+/* APLICANDO EM TODOS OS ELEMENTOS */
+/* APPLYING ON ALL THE ELEMENTS */
+* {
+	box-sizing: border-box;
+}
+
+section[id] {
+	padding-top: 58px;
+}
+
+/* NAVEGAÇÃO */
+/* NAVEGATION */
+nav {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	background-color: #333;
+}
+
+nav > a {
+	text-decoration: none;
+	color: white;
+	font-weight: 700px;
+	font-size: 28px;
+	font-family: Pacifico, serif;
+	margin-bottom: 8px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	width: 100%
+}
+
+nav ul li {
+	text-align: center;
+	width: 100%;
+
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+}
+
+/* CABEÇALHO */
+/* HEADER */
+header {
+	background-image: url("../imagens/05.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+	padding: 50px 0;
+}
+
+header p {
+	margin-bottom: 2em;
+}
+
+
+/* SOBRE */
+/* ABOUT */
+.sobre {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	background-color: #13a9ba;
+	color: white;
+	padding-bottom: 58px;
+}
+
+.sobre p {
+	margin-bottom: 2em;
+	max-width: 1000px;
+}
+
+.sobre .button {
+	background-color: white;
+	color: #333;
+}
+
+
+/* SERVIÇOS */
+/* SERVICE */
+.servicos {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.servicos .servico {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.servicos .servico h3 {
+	margin-top: 10px;
+}
+
+.servicos .servico img {
+	width: 100%;
+	max-width: 80px;
+}
+
+/* PORTFÓLIO */
+/* PORTFOLIO */
+.portfolio {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.portfolio h2 {
+	margin-bottom: 20px;
+}
+
+.portfolio img {
+	width: 100%
+}
+
+/* CONTATO */
+/* CONTACT */
+.contato {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+}
+
+.contato a {
+	display: block;
+	color: inherit;
+}
+
+.contato form {
+	display: flex;
+	flex-flow: column;
+	width: 80%;
+	margin-bottom: 30px;
+}
+
+.contato input, select, textarea {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.icone-contato:last-child {
+	margin-top: 10px;
+}
+
+
+/* RODAPÉ */
+/* FOOTER */
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #13a9ba;
+	color: white;
+	margin-top: 58px;
+}
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/*
+
+/* MEDIA QUERIES*/
+@media screen and (min-width: 768px) {
+
+	/* NAVEGAÇÃO */
+	/* NAVEGATION */
+	nav {
+		flex-flow: row;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%
+		justify-content: space-around;
+		background-color: rgba(0, 0, 0, 0.8);
+
+	}
+
+	nav ul {
+		flex-flow: row;
+		width: 50%;
+	}
+
+	/* CABEÇALHO */
+	/* HEADER */
+	header {
+		height: 100vh;
+		justify-content: center;
+	}
+
+	/* SOBRE */
+	/* ABOUT */
+	.sobre {
+		justify-content: center;
+	}
+
+	/* SERVIÇOS */
+	/* SERVICES */
+	.servicos {
+		flex-flow: row wrap;
+		align-items: flex-start;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.servicos h2 {
+		text-align: center;
+		width: 100%
+	}
+
+	.servicos .servico {
+		flex:1 1 150px;
+		padding: 0 10px;
+	}
+
+	/* PORTFÓLIO */
+	/* PORTFOLIO */
+	.portfolio {
+		flex-flow: row wrap;
+	}
+
+	.portfolio h2 {
+		text-align: center;
+		width: 100%
+	}
+
+	.portfolio img {
+		width: 33.33%
+	}
+
+	/* CONTATO */
+	/* CONTACT */
+	.contato {
+		flex-flow: row wrap;
+		justify-content: space-around;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.contato h2 {
+		text-align: center;
+		width: 100%;
+
+	}
+
+	.icone-contato:last-child {
+		margin-top: 
+	}
+}
