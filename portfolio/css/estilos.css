@@ -62,7 +62,7 @@ nav ul {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	width: 100%
+	width: 100%;
 }
 
 nav ul li {
@@ -113,6 +113,7 @@ header p {
 .sobre p {
 	margin-bottom: 2em;
 	max-width: 1000px;
+	text-align: center;
 }
 
 .sobre .button {
@@ -239,6 +240,7 @@ footer {
 	/* ABOUT */
 	.sobre {
 		justify-content: center;
+		text-align: center;
 	}
 
 	/* SERVIÇOS */
@@ -252,7 +254,7 @@ footer {
 
 	.servicos h2 {
 		text-align: center;
-		width: 100%
+		width: 100%;
 	}
 
 	.servicos .servico {
@@ -268,11 +270,11 @@ footer {
 
 	.portfolio h2 {
 		text-align: center;
-		width: 100%
+		width: 100%;
 	}
 
 	.portfolio img {
-		width: 33.33%
+		width: 33.33%;
 	}
 
 	/* CONTATO */
@@ -291,6 +293,6 @@ footer {
 	}
 
 	.icone-contato:last-child {
-		margin-top: 
+		margin-top: 0;
 	}
 }
